@@ -17,7 +17,7 @@ const Project: React.FC<ProjectProps> = ({ title, desc, link }) => {
         </A>
       </h6>
       {desc.map((desc) => (
-        <p className="mb-2 font-sans text-base" key={desc}>
+        <p className="mb-2 font-sans font-normal text-base" key={desc}>
           {desc}
         </p>
       ))}

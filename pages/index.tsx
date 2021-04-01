@@ -11,19 +11,18 @@ import Leaf from "../public/leaf.svg"
 
 // TODO: Still need to add proper light vs dark theming
 // TODO: And of course make the design responsive
-// FIXME: Fonts don't get bolded on IOS
 export default function Home() {
   return (
-    <div className="bg-white text-dark dark:bg-black dark:text-white">
+    <div className="min-h-screen bg-white text-dark dark:bg-black dark:text-white">
       <Head>
         <title>Tommy Dong</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container px-8 pt-16">
-        <Leaf className="w-48 border-white stroke-current stroke-8 text-darkGreen dark:text-lightGreen" />
+      <main className="container mx-auto px-8 pt-16 lg:pt-2 lg:flex lg:flex-row-reverse lg:justify-around lg:max-w-5xl">
+        <Leaf className="w-48 lg:w-64 lg:ml-16 stroke-current stroke-8 text-darkGreen dark:text-lightGreen lg:relative lg:top-16" />
 
-        <div className="container">
+        <div className="container lg:max-w-2xl">
           <div className="mt-16">
             <H1>
               Tommy Dong <SmallText>(yes that's my last name)</SmallText>
@@ -86,7 +85,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="mt-16 container px-8 pb-8">
+      <footer className="container mx-auto mt-16 px-8 pb-8 lg:max-w-5xl">
         All credits go to{" "}
         <A className="font-semibold" href="https://nextjs.org/">
           Next.js
