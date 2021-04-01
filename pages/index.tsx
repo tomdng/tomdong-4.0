@@ -11,6 +11,7 @@ import Leaf from "../public/leaf.svg"
 
 // TODO: Still need to add proper light vs dark theming
 // TODO: And of course make the design responsive
+// FIXME: Fonts don't get bolded on IOS
 export default function Home() {
   return (
     <div className="bg-white text-dark dark:bg-black dark:text-white">
@@ -32,7 +33,7 @@ export default function Home() {
               <SmallText>(and designs)</SmallText> great websites and meaningful
               applications for the web.
             </P>
-            <ul className="mt-4 flex flex-row justify-between font-sans font-medium text-base text-darkGreen dark:text-lightGreen underline">
+            <ul className="mt-4 flex flex-row justify-between font-sans font-semibold text-base text-darkGreen dark:text-lightGreen underline">
               <li>
                 <A href="#">GitHub</A>
               </li>
@@ -86,9 +87,15 @@ export default function Home() {
       </main>
 
       <footer className="mt-16 container px-8 pb-8">
-        All credits go to <A href="https://nextjs.org/">Next.js</A> and{" "}
-        <A href="https://tailwindcss.com/">TailwindCSS</A> even if it's little
-        overkill for the site right now.
+        All credits go to{" "}
+        <A className="font-semibold" href="https://nextjs.org/">
+          Next.js
+        </A>{" "}
+        and{" "}
+        <A className="font-semibold" href="https://tailwindcss.com/">
+          TailwindCSS
+        </A>{" "}
+        even if it's little overkill for the site right now.
       </footer>
     </div>
   )
