@@ -49,22 +49,19 @@ export default function Home() {
             <P>Here are a few of my projects.</P>
             <Project
               title="Propguard"
-              desc="Codecademy-style interactive learning tool built with React and
-                Gatsby that teaches college students how to write autonomous
-                flight code for quadcopters."
-              desc1="It also comes with a visual tool to create/modify custom
-                tutorials so the user experience is good all around."
+              desc={[
+                "Codecademy-style interactive learning tool built with React and Gatsby that teaches college students how to write autonomous flight code for quadcopters.",
+                "It also comes with a visual tool to create/modify custom tutorials so the user experience is good all around.",
+              ]}
               link="https://github.com/MissouriMRR/propguard"
             />
 
             <Project
               title="Sushi Ai Website"
-              desc="There was a Japanese sushi place that didn’t have good websites
-                (and therefore no internet traffic). So I went ahead and built a
-                new website with React and Gatsby that not only looked better,
-                but loaded much faster."
-              desc1="As an added bonus the improved SEO netted several thousand more
-                page views."
+              desc={[
+                "There was a Japanese sushi place that didn’t have good websites (and therefore no internet traffic). So I went ahead and built a new website with React and Gatsby that not only looked better, but loaded much faster.",
+                "As an added bonus the improved SEO netted several thousand more page views.",
+              ]}
               link="https://github.com/tomdng/sushi-ai"
             />
           </div>
