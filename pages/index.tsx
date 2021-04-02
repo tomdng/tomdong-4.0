@@ -9,6 +9,7 @@ import SmallText from "../components/SmallText"
 
 import Leaf from "../public/leaf.svg"
 
+// TODO: Drop resume
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-dark dark:bg-black dark:text-white">
@@ -32,13 +33,13 @@ export default function Home() {
             </P>
             <ul className="mt-4 flex flex-row justify-between font-sans font-medium text-base lg:text-lg text-darkGreen dark:text-lightGreen underline">
               <li>
-                <A href="#">GitHub</A>
+                <A href="https://github.com/tomdng">GitHub</A>
               </li>
               <li>
-                <A href="#">Email</A>
+                <A href="mailto:contact@tomdong.io">Email</A>
               </li>
               <li>
-                <A href="#">Resume</A>
+                <A href="/resume.pdf">Resume</A>
               </li>
             </ul>
           </div>
