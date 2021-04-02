@@ -9,8 +9,6 @@ import SmallText from "../components/SmallText"
 
 import Leaf from "../public/leaf.svg"
 
-// TODO: Still need to add proper light vs dark theming
-// TODO: And of course make the design responsive
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-dark dark:bg-black dark:text-white">
@@ -20,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className="container mx-auto px-8 pt-16 lg:pt-2 lg:flex lg:flex-row-reverse lg:justify-around lg:max-w-5xl">
-        <Leaf className="w-48 lg:w-64 lg:ml-16 stroke-current stroke-8 text-darkGreen dark:text-lightGreen lg:relative lg:top-16" />
+        <Leaf className="w-48 lg:w-64 lg:max-h-screen lg:ml-16 stroke-current stroke-8 text-darkGreen dark:text-lightGreen lg:relative lg:top-16" />
 
         <div className="container lg:max-w-2xl">
           <div className="mt-16">
@@ -32,7 +30,7 @@ export default function Home() {
               <SmallText>(and designs)</SmallText> great websites and meaningful
               applications for the web.
             </P>
-            <ul className="mt-4 flex flex-row justify-between font-sans font-semibold text-base text-darkGreen dark:text-lightGreen underline">
+            <ul className="mt-4 flex flex-row justify-between font-sans font-medium text-base lg:text-lg text-darkGreen dark:text-lightGreen underline">
               <li>
                 <A href="#">GitHub</A>
               </li>
@@ -85,13 +83,13 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="container mx-auto mt-16 px-8 pb-8 lg:max-w-5xl">
+      <footer className="container mx-auto mt-16 px-8 pb-8 lg:pb-0 lg:max-w-5xl">
         All credits go to{" "}
-        <A className="font-semibold" href="https://nextjs.org/">
+        <A className="font-medium" href="https://nextjs.org/">
           Next.js
         </A>{" "}
         and{" "}
-        <A className="font-semibold" href="https://tailwindcss.com/">
+        <A className="font-medium" href="https://tailwindcss.com/">
           TailwindCSS
         </A>{" "}
         even if it's little overkill for the site right now.
