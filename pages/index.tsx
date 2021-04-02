@@ -9,13 +9,17 @@ import SmallText from "../components/SmallText"
 
 import Leaf from "../public/leaf.svg"
 
-// TODO: Drop resume
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-dark dark:bg-black dark:text-white">
       <Head>
         <title>Tommy Dong</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="Tommy Dong"></meta>
+        <meta
+          name="description"
+          content="Tommy Dong is a software engineer that specializes in web development by building great websites and meaningful applications for the web."
+        ></meta>
       </Head>
 
       <main className="container mx-auto px-8 pt-16 lg:pt-2 lg:flex lg:flex-row-reverse lg:justify-around lg:max-w-5xl">
