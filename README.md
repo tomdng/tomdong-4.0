@@ -5,12 +5,10 @@
 
 <!-- PROJECT SHIELDS -->
 
-[![Deploy][deploy-shield]][deploy-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://tomdong.io/">
     <img src="misc/leaf.png" alt="Logo" width="256" height="256">
   </a>
 
@@ -20,29 +18,23 @@
     Fourth iteration of my site. Clean and small.
     <!-- TODO: Setup and add older versions of site -->
     <!-- <br />
+    <!-- <br />
     <a href="https://github.com/github_username/repo_name">V1</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">V2</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">V3</a> -->
   </p>
+
+  <div align="center">
+    <img src="https://api.netlify.com/api/v1/badges/868a36e5-b21e-4527-b18f-c2b97082e80b/deploy-status" alt="Netlify deploy status">
+  </div>
 </p>
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]]()
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 ### Built With
 
-- []()
-- []()
-- []()
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
 
 <!-- GETTING STARTED -->
 
@@ -50,14 +42,7 @@ Here's a blank template to get started:
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- Get NodeJS and Yarn
 
 ### Installation
 
@@ -65,10 +50,15 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-2. Install NPM packages
+2. Install packages
    ```sh
-   npm install
+   yarn install
    ```
+3. Run in dev mode
+   ```sh
+   yarn dev
+   ```
+4. Visit `localhost:3000`!
 
 <!-- LICENSE -->
 
@@ -80,9 +70,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgements
 
-- [Next.js](https://nextjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [This Stackoverflow answer for making my fonts look like my designs](https://stackoverflow.com/questions/28217486/font-renders-thicker-in-browsers)
+- Open-source and the webdev community. You all are amazing and kind and helpful!
+- [This Stackoverflow answer for making my fonts look as designed on Figma](https://stackoverflow.com/questions/28217486/font-renders-thicker-in-browsers)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
