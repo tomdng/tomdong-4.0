@@ -7,3 +7,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+#leaf {
+  stroke-dasharray: 1210;
+  stroke-dashoffset: 1210;
+  animation: showLeaf 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showLeaf {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

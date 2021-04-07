@@ -23,7 +23,10 @@ export default function Home() {
       </Head>
 
       <main className="container mx-auto px-8 pt-16 lg:pt-2 lg:flex lg:flex-row-reverse lg:justify-around lg:max-w-5xl">
-        <Leaf className="w-48 lg:w-64 lg:max-h-screen lg:ml-16 stroke-current stroke-8 text-darkGreen dark:text-lightGreen lg:relative lg:top-16" />
+        <Leaf
+          id="leaf"
+          className="w-48 lg:w-64 lg:max-h-screen lg:ml-16 stroke-current stroke-8 text-darkGreen dark:text-lightGreen lg:relative lg:top-16"
+        />
 
         <div className="container lg:max-w-2xl">
           <div className="mt-16">
