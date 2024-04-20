@@ -1,7 +1,10 @@
 import React from "react"
 
-import { TextProps } from "../types"
+import { TextProps } from "../../../types"
 
+/**
+ * @deprecated 
+ */
 const H1: React.FC<TextProps> = ({ className, children }) => {
   return (
     <h1 className={`mb-4 font-serif text-4xl lg:text-5xl ${className}`}>

@@ -1,11 +1,14 @@
 import React from "react"
 
-import { TextProps } from "../types"
+import { TextProps } from "../../../types"
 
 interface AProps extends TextProps {
   href: string
 }
 
+/**
+ * @deprecated 
+ */
 const A: React.FC<AProps> = ({ className, children, href }) => {
   return (
     <a
