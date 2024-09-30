@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,15 +15,9 @@ const config: Config = {
       darkGreen: "#5b8600",
     },
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
-      serif: ["Source Serif Pro", "serif"],
-    },
-    extend: {
-      strokeWidth: {
-        8: "8",
-      },
+      sans: ["var(--font-inter)", "sans-serif"],
+      serif: ["var(--font-source-serif)", "serif"],
     },
   },
   plugins: [],
-};
-export default config;
+} satisfies Config;
